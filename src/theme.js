@@ -1,8 +1,9 @@
 const { createMuiTheme } = require('@material-ui/core')
-const { teal } = require('@material-ui/core/colors')
+const { teal, purple } = require('@material-ui/core/colors')
 
-createMuiTheme({
+const theme = createMuiTheme({
   palette: {
-    primary: teal
+    primary: teal,
+    secondary: purple
   }
 })

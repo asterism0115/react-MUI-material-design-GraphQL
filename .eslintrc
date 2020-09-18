@@ -1,7 +1,7 @@
 {
   "root": true,
   "extends": [
-    "airbnb-base",
+    "airbnb",
     "prettier",
     "prettier/react",
     "eslint:recommended",
@@ -11,8 +11,11 @@
   ],
   "plugins": ["react", "react-hooks", "jsx-a11y"],
   "env": {
+    "commonjs": true,
+    "node": true,
+    "browser": true,
     "es6": true,
-    "node": true
+    "jest": true
   },
   "settings": {
     "react": {
@@ -21,13 +24,14 @@
   },
 
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2018,
     "sourceType": "module",
     "allowImportExportEverywhere": true,
     "ecmaFeatures": {
       "jsx": true,
+      "modules": true,
       "classes": true,
-      "defaultParams": true
+      "experimentalObjectRestSpread": true
     }
   },
   "rules": {
@@ -39,7 +43,7 @@
     ],
     "comma-dangle": [2, "never"],
     "array-bracket-spacing": [2, "never"],
-    "spaced-comment": "off",
+    "no-multiple-empty-lines": "off",
     "no-console": "warn",
     "consistent-return": "off",
     "func-names": "off",

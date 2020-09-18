@@ -1,8 +1,10 @@
 {
-    "semi": false,
-    "tabWidth": 2,
-    "printWidth": 100,
-    "singleQuote": true,
-    "trailingComma": "none",
-    "jsxBracketSameLine": true
+  "semi": false,
+  "tabWidth": 2,
+  "printWidth": 100,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "jsxBracketSameLine": true,
+  "no-multiple-empty-lines": ["error", { "max": 3 }],
+  "prettier.arrowParens": "avoid"
 }

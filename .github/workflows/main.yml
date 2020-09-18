@@ -1,0 +1,23 @@
+name: Style-CI
+
+on:
+  push:
+    branches:
+      - master
+      - player
+  pull_request:
+    branches:
+      - master
+      - player
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install NPM Dependencies
+        run: npm install
+
+      - name: Format Code 💃🏼
+        run: npm run format

@@ -1,8 +1,9 @@
 {
   "root": true,
   "extends": [
-    "airbnb",
+    "airbnb-base",
     "prettier",
+    "prettier/react",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",

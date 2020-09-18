@@ -1,0 +1,117 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb",
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "eslint-plugin", "plugin:react/recommended","react-hooks", "jsx-a11y"],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true,
+      "classes": true,
+      "defaultParams": true
+    },
+    "sourceType": "script"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "comma-dangle": [2, "never"],
+    "object-curly-spacing": [2, "never"],
+    "array-bracket-spacing": [2, "never"],
+    "spaced-comment": "off",
+    "no-console": "warn",
+    "consistent-return": "off",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "no-process-exit": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "semi": "off",
+    "prefer-destructuring": ["error", { "object": true, "array": false }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }],
+    "react/destructuring-assignment": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-closing-tag-location": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-filename-extension": 0,
+    "react/jsx-no-target-blank": 0,
+    "react/require-default-props": 0,
+    "react/require-extension": 0,
+    "react/self-closing-comp": 0,
+    "react/sort-comp": 0,
+    "redux-saga/no-yield-in-race": 2,
+    "redux-saga/yield-effects": 2,
+    "require-yield": 0,
+    "quotes": [ 1, "single", "avoid-escape" ],
+    "no-use-before-define": [ 2, { "functions": false } ],
+    "prefer-const": 1,
+    "react/prefer-es6-class": 0,
+    "react/jsx-curly-spacing": [ 2, "always" ],
+    "react/jsx-indent": [ 2, 4 ],
+    "react/prop-types": [ 1 ],
+    "react/no-array-index-key": [ 1 ],
+    "class-methods-use-this": [ 1 ],
+    "react/no-unknown-property": 1,
+    "no-undef": [ 1 ],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+
+    "max-len": [
+      2,
+      120,
+      {
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreComments": true
+      }
+    ],
+
+    "prefer-object-spread": 0,
+    "prefer-rest-params": 0,
+    "prefer-spread": 0,
+    "function-paren-newline": 0,
+    "no-plusplus": 1,
+    "no-mixed-operators": 1,
+    "no-restricted-syntax": [
+      2,
+      {
+        "selector": "ObjectPattern",
+        "message": "Object destructuring is not compatible with Node v4"
+      }
+    ],
+    "strict": [2, "safe"],
+    "valid-jsdoc": [
+      2,
+      {
+        "requireReturn": false,
+        "requireParamDescription": false,
+        "requireReturnDescription": false
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": "tests/**",
+      "rules": {
+        "no-template-curly-in-string": 1
+      }
+    }
+  ]
+}

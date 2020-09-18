@@ -2,11 +2,11 @@ import { AppBar, makeStyles, Toolbar, Typography } from '@material-ui/core'
 import { HeadsetTwoTone } from '@material-ui/icons'
 import React from 'react'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   title: {
-    marginLeft: '8px'
+    marginLeft: theme.spacing(2)
   }
-})
+}))
 
 const Header = () => {
   const classes = useStyles()
